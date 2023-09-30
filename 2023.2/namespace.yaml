@@ -1,0 +1,9 @@
+kind: Project
+apiVersion: project.openshift.io/v1
+metadata:
+  name: cp4i
+  labels:
+    kubernetes.io/metadata.name: cp4i
+spec:
+  finalizers:
+    - kubernetes

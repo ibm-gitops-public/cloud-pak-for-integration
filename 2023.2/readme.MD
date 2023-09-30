@@ -1,0 +1,1 @@
+This will always pull the latest images for Cloud Pak for Integration
