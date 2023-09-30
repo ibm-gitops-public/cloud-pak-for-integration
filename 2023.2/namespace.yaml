@@ -4,6 +4,7 @@ metadata:
   name: cp4i
   labels:
     kubernetes.io/metadata.name: cp4i
+    argocd.argoproj.io/managed-by: argocd
 spec:
   finalizers:
     - kubernetes
