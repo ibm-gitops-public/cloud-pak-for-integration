@@ -5,6 +5,8 @@ metadata:
   labels:
     kubernetes.io/metadata.name: cp4i
     argocd.argoproj.io/managed-by: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   finalizers:
     - kubernetes
