@@ -4,7 +4,7 @@ metadata:
   name: api-connect
   namespace: cp4i
   annotations:
-    argocd.argoproj.io/sync-wave: "110"
+    argocd.argoproj.io/sync-wave: "103"
 spec:
   license:
     accept: true
