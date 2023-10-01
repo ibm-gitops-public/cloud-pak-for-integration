@@ -1,0 +1,15 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  labels:
+    operators.coreos.com/ibm-integration-platform-navigator.openshift-operators: ''
+  annotations:
+    argocd.argoproj.io/sync-wave: "105"
+  name: ibm-apiconnect
+  namespace: openshift-operators
+spec:
+  channel: v5.0
+  installPlanApproval: Automatic
+  name: ibm-apiconnect
+  source: ibm-operator-catalog
+  sourceNamespace: openshift-marketplace
