@@ -1,5 +1,5 @@
-kind: APIConnectCluster
 apiVersion: apiconnect.ibm.com/v1beta1
+kind: APIConnectCluster
 metadata:
   name: api-connect
   namespace: cp4i
