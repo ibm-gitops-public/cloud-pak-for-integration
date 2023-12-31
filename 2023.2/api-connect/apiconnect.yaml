@@ -3,7 +3,7 @@ kind: APIConnectCluster
 metadata:
   name: api-connect
   annotations:
-    argocd.argoproj.io/sync-wave: "103"
+    argocd.argoproj.io/sync-wave: "20"
 spec:
   license:
     accept: true

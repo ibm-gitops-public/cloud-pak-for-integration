@@ -4,7 +4,7 @@ metadata:
   labels:
     operators.coreos.com/ibm-integration-platform-navigator.openshift-operators: ''
   annotations:
-    argocd.argoproj.io/sync-wave: "101"
+    argocd.argoproj.io/sync-wave: "10"
   name: ibm-apiconnect
   namespace: openshift-operators
 spec:

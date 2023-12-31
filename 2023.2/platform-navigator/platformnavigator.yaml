@@ -3,7 +3,7 @@ kind: PlatformNavigator
 metadata:
   name: platform-navigator
   annotations:
-    argocd.argoproj.io/sync-wave: "102"
+    argocd.argoproj.io/sync-wave: "20"
 spec:
   license:
     accept: true
