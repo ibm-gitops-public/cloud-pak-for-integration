@@ -4,6 +4,7 @@ metadata:
   name: kustomize-configmap
   annotations:
     argocd.argoproj.io/sync-wave: "1"
+  namespace: cp4i
 
 data:
   file: 'ocs-storagecluster-cephfs'
