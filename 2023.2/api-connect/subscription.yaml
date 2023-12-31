@@ -8,8 +8,9 @@ metadata:
   name: ibm-apiconnect
   namespace: openshift-operators
 spec:
-  channel: v5.0
+  channel: v5.1
   installPlanApproval: Automatic
   name: ibm-apiconnect
   source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace
+  startingCSV: ibm-apiconnect.v5.1.0
