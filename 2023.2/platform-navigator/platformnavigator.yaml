@@ -4,6 +4,7 @@ metadata:
   name: platform-navigator
   annotations:
     argocd.argoproj.io/sync-wave: "20"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   license:
     accept: true
