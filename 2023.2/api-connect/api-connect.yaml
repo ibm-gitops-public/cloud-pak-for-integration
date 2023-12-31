@@ -2,7 +2,6 @@ apiVersion: apiconnect.ibm.com/v1beta1
 kind: APIConnectCluster
 metadata:
   name: api-connect
-  namespace: cp4i
   annotations:
     argocd.argoproj.io/sync-wave: "103"
 spec:
@@ -13,4 +12,4 @@ spec:
     use: nonproduction
   profile: n1xc7.m48
   version: 10.0.6.0
-  storageClassName: ocs-storagecluster-ceph-rbd
+  storageClassName: nfs

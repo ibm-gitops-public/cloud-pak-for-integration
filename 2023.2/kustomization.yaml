@@ -1,26 +1,29 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+namespace: cp4i
 
 resources:
+  - kustomizeconfigmap.yaml
+  - catalogsource.yaml
   - platform-navigator
   - api-connect
-  - catalogsource.yaml
-  - namespace.yaml
 
-patches:
-  - target:
-      group: integration.ibm.com
-      version: v1beta1
-      kind: PlatformNavigator
-    patch: |-
-      - op: replace
-        path: /spec/storage/class
-        value: ocs-storagecluster-cephfs
-  - target:
-      group: apiconnect.ibm.com
-      version: v1beta1
-      kind: APIConnectCluster
-    patch: |-
-      - op: replace
-        path: /spec/storageClassName
-        value: ocs-storagecluster-ceph-rbd
+replacements:
+  - source:
+      kind: ConfigMap
+      name: kustomize-configmap
+      fieldPath: data.block
+    targets:
+      - select:
+          kind: APIConnectCluster
+        fieldPaths:
+          - spec.storageClassName
+  - source:
+      kind: ConfigMap
+      name: kustomize-configmap
+      fieldPath: data.file
+    targets:
+      - select:
+          kind: PlatformNavigator
+        fieldPaths:
+          - spec.storage.class
