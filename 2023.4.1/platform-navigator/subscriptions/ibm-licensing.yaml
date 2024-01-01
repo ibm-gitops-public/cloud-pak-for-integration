@@ -1,0 +1,15 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: ibm-licensing-operator-app
+  namespace: ibm-licensing
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+  labels:
+    argocd.argoproj.io/managed-by: argocd
+spec:
+  channel: v4.2
+  installPlanApproval: Automatic
+  name: ibm-licensing-operator-app
+  source: ibm-licensing-catalog
+  sourceNamespace: openshift-marketplace

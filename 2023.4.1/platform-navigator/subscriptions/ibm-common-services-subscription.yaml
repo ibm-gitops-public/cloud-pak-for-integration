@@ -11,5 +11,5 @@ spec:
   channel: v4.3
   installPlanApproval: Automatic
   name: ibm-common-service-operator
-  source: ibm-operator-catalog
+  source: opencloud-operators.yaml
   sourceNamespace: openshift-marketplace

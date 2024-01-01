@@ -3,6 +3,7 @@ kind: Subscription
 metadata:
   labels:
     operators.coreos.com/ibm-cert-manager-operator.ibm-cert-manager: ''
+    argocd.argoproj.io/managed-by: argocd
   name: ibm-cert-manager-operator
   namespace: ibm-cert-manager
   annotations:
@@ -11,5 +12,5 @@ spec:
   channel: v4.2
   installPlanApproval: Automatic
   name: ibm-cert-manager-operator
-  source: ibm-operator-catalog
+  source: ibm-cert-manager-catalog
   sourceNamespace: openshift-marketplace

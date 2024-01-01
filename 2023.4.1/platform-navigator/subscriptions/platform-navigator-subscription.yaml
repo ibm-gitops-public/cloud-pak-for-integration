@@ -3,6 +3,7 @@ kind: Subscription
 metadata:
   labels:
     operators.coreos.com/ibm-integration-platform-navigator.openshift-operators: ''
+    argocd.argoproj.io/managed-by: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "10"
   name: ibm-integration-platform-navigator
@@ -11,5 +12,5 @@ spec:
   channel: v7.2
   installPlanApproval: Automatic
   name: ibm-integration-platform-navigator
-  source: ibm-operator-catalog
+  source: opencloud-operators
   sourceNamespace: openshift-marketplace
