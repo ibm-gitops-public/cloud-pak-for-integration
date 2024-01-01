@@ -1,3 +1,2 @@
 version: '2023.4.1'
 giturl: 'https://github.com/ibm-gitops-public/cloud-pak-for-integration.git'
-cp4inamespace: 'cp4i'
