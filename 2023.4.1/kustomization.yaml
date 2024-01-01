@@ -11,16 +11,16 @@ replacements:
   - source:
       kind: ConfigMap
       name: kustomize-configmap
-      fieldPath: metadata.namespace
+      fieldPath: data.namespace
     targets:
       - select:
           kind: APIConnectCluster
         fieldPaths:
-          - data.namespace
+          - metadata.namespace
       - select:
           kind: PlatformNavigator
         fieldPaths:
-          - data.namespace
+          - metadata.namespace
       - select:
           kind: Project
           name: cp4i
