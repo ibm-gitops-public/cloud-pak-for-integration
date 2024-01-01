@@ -4,3 +4,4 @@ resources:
 - certmanager.yaml
 - commonservices.yaml
 - licensing.yaml
+- cp4i.yaml

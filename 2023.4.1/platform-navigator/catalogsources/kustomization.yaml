@@ -6,3 +6,4 @@ resources:
 - ibm-licensing-reporter.yaml
 - ibm-licensing.yaml
 - postgresql.yaml
+- platform.yaml
