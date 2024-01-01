@@ -4,3 +4,10 @@ kind: Kustomization
 resources:
   - platformnavigator.yaml
   - platform-navigator-subscription.yaml
+  - cert-manager-namespace.yaml
+  - cert-manager-subscription.yaml
+  - common-service.yaml
+  - ibm-common-services-namespace.yaml
+  - ibm-common-services-subscription.yaml
+  - ibm-licensing-namespace.yaml
+  - ibm-licensing-subscription.yaml
