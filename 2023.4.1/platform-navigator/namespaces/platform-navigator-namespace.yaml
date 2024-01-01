@@ -7,6 +7,3 @@ metadata:
     argocd.argoproj.io/managed-by: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "1"
-spec:
-  finalizers:
-    - kubernetes
