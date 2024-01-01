@@ -3,10 +3,6 @@ kind: OperatorGroup
 metadata:
   name: operatorgroup
   namespace: cp4i
-  labels:
-    argocd.argoproj.io/managed-by: argocd
-  annotations:
-    argocd.argoproj.io/sync-wave: "5"
 spec:
   targetNamespaces:
     - cp4i

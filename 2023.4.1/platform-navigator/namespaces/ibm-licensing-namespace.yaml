@@ -4,6 +4,3 @@ metadata:
   name: ibm-licensing
   labels:
     kubernetes.io/metadata.name: ibm-licensing
-    argocd.argoproj.io/managed-by: argocd
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"

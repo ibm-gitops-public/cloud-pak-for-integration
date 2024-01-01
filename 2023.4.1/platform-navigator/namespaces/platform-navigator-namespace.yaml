@@ -4,6 +4,3 @@ metadata:
   name: cp4i
   labels:
     kubernetes.io/metadata.name: default
-    argocd.argoproj.io/managed-by: argocd
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
