@@ -12,5 +12,5 @@ spec:
   channel: v4.2
   installPlanApproval: Automatic
   name: ibm-license-service-reporter-operator
-  source: ibm-license-service-reporter-operator-catalog
+  source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace

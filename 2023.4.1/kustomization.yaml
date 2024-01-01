@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - kustomizeconfigmap.yaml
+  - ibm-catalog-source.yaml
   - platform-navigator
   # - api-connect
 
