@@ -6,4 +6,4 @@ resources:
   - namespaces
   - operatorgroups
   - subscriptions
-  # - instances
+  - instances
