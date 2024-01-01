@@ -5,7 +5,7 @@ resources:
   - kustomizeconfigmap.yaml
   - catalogsource.yaml
   - platform-navigator
-  - api-connect
+  # - api-connect
 
 replacements:
   - source:
