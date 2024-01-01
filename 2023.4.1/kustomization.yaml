@@ -5,8 +5,18 @@ resources:
   - kustomizeconfigmap.yaml
   - ibm-catalog-source.yaml
   - platform-navigator
+  - gitops-target
 
 replacements:
+  - source:
+      kind: ConfigMap
+      name: kustomize-configmap
+      fieldPath: data.git-url
+    targets:
+      - select:
+          kind: Application
+        fieldPaths:
+          - spec.source.repoURL
   - source:
       kind: ConfigMap
       name: kustomize-configmap

@@ -8,3 +8,4 @@ data:
   file: 'ocs-storagecluster-cephfs'
   block: 'ocs-storagecluster-ceph-rbd'
   namespace: 'cp4i'
+  git-url: 'https://github.com/ibm-gitops-public/cloud-pak-for-integration.git'
