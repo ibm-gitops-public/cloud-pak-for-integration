@@ -7,4 +7,4 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    - 'resources-finalizer.argocd.argoproj.io'

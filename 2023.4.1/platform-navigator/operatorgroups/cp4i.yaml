@@ -6,7 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "2"
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    - 'resources-finalizer.argocd.argoproj.io'
 spec:
   targetNamespaces:
     - cp4i

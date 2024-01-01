@@ -7,7 +7,7 @@ metadata:
     olm.catalogImageTemplate: "icr.io/cpopen/ibm-operator-catalog:v{kube_major_version}.{kube_minor_version}"
     argocd.argoproj.io/sync-wave: "0"
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    - 'resources-finalizer.argocd.argoproj.io'
 spec:
   displayName: IBM Operator Catalog
   publisher: IBM

@@ -6,7 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    - 'resources-finalizer.argocd.argoproj.io'
 data:
   file: 'ocs-storagecluster-cephfs'
   block: 'ocs-storagecluster-ceph-rbd'
