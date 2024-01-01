@@ -5,6 +5,10 @@ metadata:
     operators.coreos.com/ibm-cert-manager-operator.ibm-cert-manager: ''
   name: ibm-cert-manager-operator
   namespace: ibm-cert-manager
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   channel: v4.2
   installPlanApproval: Automatic

@@ -3,6 +3,10 @@ kind: Subscription
 metadata:
   name: ibm-common-service-operator
   namespace: openshift-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   channel: v4.3
   installPlanApproval: Automatic

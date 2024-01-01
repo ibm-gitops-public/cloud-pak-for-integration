@@ -3,6 +3,10 @@ kind: OperatorGroup
 metadata:
   name: operatorgroup
   namespace: ibm-common-services
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   targetNamespaces:
     - ibm-common-services

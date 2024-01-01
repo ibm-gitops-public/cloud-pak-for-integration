@@ -4,3 +4,7 @@ metadata:
   name: cp4i
   labels:
     kubernetes.io/metadata.name: default
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io

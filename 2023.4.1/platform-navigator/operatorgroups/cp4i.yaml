@@ -3,6 +3,10 @@ kind: OperatorGroup
 metadata:
   name: operatorgroup
   namespace: cp4i
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   targetNamespaces:
     - cp4i

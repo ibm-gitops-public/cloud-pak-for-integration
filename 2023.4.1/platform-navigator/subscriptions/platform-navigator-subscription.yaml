@@ -5,6 +5,10 @@ metadata:
     operators.coreos.com/ibm-integration-platform-navigator.openshift-operators: ''
   name: ibm-integration-platform-navigator
   namespace: openshift-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   channel: v7.2
   installPlanApproval: Automatic

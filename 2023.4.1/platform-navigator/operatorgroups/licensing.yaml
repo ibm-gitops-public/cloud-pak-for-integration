@@ -3,6 +3,10 @@ kind: OperatorGroup
 metadata:
   name: licensing-og
   namespace: ibm-licensing
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   targetNamespaces:
     - ibm-licensing

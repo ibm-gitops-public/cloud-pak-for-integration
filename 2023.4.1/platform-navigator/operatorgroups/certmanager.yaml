@@ -3,3 +3,7 @@ kind: OperatorGroup
 metadata:
   name: operatorgroup
   namespace: ibm-cert-manager
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
