@@ -6,9 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    repoURL: {{ .Values.giturl }}
     targetRevision: HEAD
-    path: guestbook
+    path: "{{ .Values.version }}/platform-navigator"
   destination:
     server: https://kubernetes.default.svc
-    namespace: guestbook
