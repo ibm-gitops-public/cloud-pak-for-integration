@@ -2,10 +2,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: kustomize-configmap
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
-  labels:
-    argocd.argoproj.io/managed-by: argocd
   namespace: default
 
 data:
