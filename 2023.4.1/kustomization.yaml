@@ -21,6 +21,7 @@ replacements:
           kind: PlatformNavigator
         fieldPaths:
           - metadata.namespace
+
   - source:
       kind: ConfigMap
       name: kustomize-configmap
@@ -30,6 +31,7 @@ replacements:
           kind: APIConnectCluster
         fieldPaths:
           - spec.storageClassName
+
   - source:
       kind: ConfigMap
       name: kustomize-configmap
@@ -39,3 +41,7 @@ replacements:
           kind: PlatformNavigator
         fieldPaths:
           - spec.storage.class
+      - select:
+          kind: CommonService
+        fieldPaths:
+          - spec.storageClass

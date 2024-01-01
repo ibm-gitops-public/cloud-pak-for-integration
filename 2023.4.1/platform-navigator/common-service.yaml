@@ -1,0 +1,16 @@
+apiVersion: operator.ibm.com/v3
+kind: CommonService
+metadata:
+  annotations:
+    version: '-1'
+    argocd.argoproj.io/sync-wave: "20"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+  name: common-service
+  namespace: openshift-operators
+spec:
+  license:
+    accept: true
+  operatorNamespace: openshift-operators
+  servicesNamespace: ibm-common-services
+  size: medium
+  storageClass: default

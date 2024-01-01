@@ -1,0 +1,12 @@
+kind: Project
+apiVersion: project.openshift.io/v1
+metadata:
+  name: ibm-cert-manager
+  labels:
+    kubernetes.io/metadata.name: ibm-cert-manager
+    argocd.argoproj.io/managed-by: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  finalizers:
+    - kubernetes

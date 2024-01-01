@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - platformnavigator.yaml
-  - subscription.yaml
+  - platform-navigator-subscription.yaml
