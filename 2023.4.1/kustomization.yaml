@@ -16,11 +16,11 @@ replacements:
       - select:
           kind: APIConnectCluster
         fieldPaths:
-          - metadata.namespace
+          - data.namespace
       - select:
           kind: PlatformNavigator
         fieldPaths:
-          - metadata.namespace
+          - data.namespace
       - select:
           kind: Project
           name: cp4i

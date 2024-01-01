@@ -9,3 +9,4 @@ metadata:
 data:
   file: 'ocs-storagecluster-cephfs'
   block: 'ocs-storagecluster-ceph-rbd'
+  namespace: 'cp4i'
