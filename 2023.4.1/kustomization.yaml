@@ -21,6 +21,12 @@ replacements:
           kind: PlatformNavigator
         fieldPaths:
           - metadata.namespace
+      - select:
+          kind: Project
+          name: cp4i
+        fieldPaths:
+          - metadata.name
+          - metadata.labels.[kubernetes.io/metadata.name]
 
   - source:
       kind: ConfigMap

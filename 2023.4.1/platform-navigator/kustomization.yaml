@@ -11,3 +11,4 @@ resources:
   - ibm-common-services-subscription.yaml
   - ibm-licensing-namespace.yaml
   - ibm-licensing-subscription.yaml
+  - platform-navigator-namespace.yaml
