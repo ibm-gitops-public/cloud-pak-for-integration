@@ -12,7 +12,7 @@ spec:
   displayName: IBM Operator Catalog
   publisher: IBM
   sourceType: grpc
-  image: icr.io/cpopen/ibm-operator-catalog:latest
+  image: icr.io/cpopen/ibm-operator-catalog:v1.27
   updateStrategy:
     registryPoll:
       interval: 45m
