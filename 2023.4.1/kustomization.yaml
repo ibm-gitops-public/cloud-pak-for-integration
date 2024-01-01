@@ -44,10 +44,6 @@ replacements:
       fieldPath: data.file
     targets:
       - select:
-          kind: PlatformNavigator
-        fieldPaths:
-          - spec.storage.class
-      - select:
           kind: CommonService
         fieldPaths:
           - spec.storageClass
