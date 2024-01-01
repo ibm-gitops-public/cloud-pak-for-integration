@@ -1,13 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: platform-navigator
+  name: platform-navigator-operator-subscriptions
   namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   project: default
   source:
     repoURL: {{ .Values.giturl }}
     targetRevision: HEAD
-    path: "{{ .Values.version }}/platform-navigator"
+    path: "{{ .Values.version }}/ibm-catalog-source"
   destination:
     server: https://kubernetes.default.svc
