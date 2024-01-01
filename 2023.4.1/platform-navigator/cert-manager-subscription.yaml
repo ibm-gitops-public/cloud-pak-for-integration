@@ -13,4 +13,3 @@ spec:
   name: ibm-cert-manager-operator
   source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace
-  startingCSV: ibm-cert-manager-operator.v4.2.1

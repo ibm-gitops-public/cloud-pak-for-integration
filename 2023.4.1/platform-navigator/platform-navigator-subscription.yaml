@@ -13,4 +13,3 @@ spec:
   name: ibm-integration-platform-navigator
   source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace
-  startingCSV: ibm-integration-platform-navigator.v7.2.0

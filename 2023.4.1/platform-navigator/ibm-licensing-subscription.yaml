@@ -13,4 +13,3 @@ spec:
   name: ibm-licensing-operator-app
   source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace
-  startingCSV: ibm-licensing-operator.v4.2.1
