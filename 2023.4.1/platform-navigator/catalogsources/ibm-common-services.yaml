@@ -11,7 +11,7 @@ spec:
   displayName: IBMCS Operators
   publisher: IBM
   sourceType: grpc
-  image: icr.io/cpopen/ibm-common-service-catalog:4.2
+  image: icr.io/cpopen/ibm-common-service-catalog
   updateStrategy:
     registryPoll:
       interval: 45m

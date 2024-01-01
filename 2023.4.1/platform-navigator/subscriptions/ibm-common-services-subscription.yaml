@@ -8,7 +8,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
-  channel: v4.2
+  channel: v4.3
   installPlanApproval: Automatic
   name: ibm-common-service-operator
   source: opencloud-operators
