@@ -8,7 +8,6 @@ patches:
   - target:
       kind: CommonService
       name: common-service
-      version: operator.ibm.com/v3
     patch: |-
       - op: replace
         path: /spec/storageClass
