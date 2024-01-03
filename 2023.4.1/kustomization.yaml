@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - kustomizeconfigmap.yaml
-  - ibm-catalog-source
   - platform-navigator
 
 replacements:
