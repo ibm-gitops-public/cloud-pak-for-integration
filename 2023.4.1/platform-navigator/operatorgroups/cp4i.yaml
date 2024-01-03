@@ -2,7 +2,6 @@ apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
   name: operatorgroup
-  namespace: cp4i
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:

@@ -2,46 +2,14 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - kustomizeconfigmap.yaml
   - platform-navigator
 
-replacements:
-  - source:
-      kind: ConfigMap
-      name: kustomize-configmap
-      fieldPath: data.namespace
-    targets:
-      - select:
-          kind: APIConnectCluster
-        fieldPaths:
-          - metadata.namespace
-      - select:
-          kind: PlatformNavigator
-        fieldPaths:
-          - metadata.namespace
-      - select:
-          kind: Project
-          name: cp4i
-        fieldPaths:
-          - metadata.name
-          - metadata.labels.[kubernetes.io/metadata.name]
-
-  - source:
-      kind: ConfigMap
-      name: kustomize-configmap
-      fieldPath: data.block
-    targets:
-      - select:
-          kind: APIConnectCluster
-        fieldPaths:
-          - spec.storageClassName
-
-  - source:
-      kind: ConfigMap
-      name: kustomize-configmap
-      fieldPath: data.file
-    targets:
-      - select:
-          kind: CommonService
-        fieldPaths:
-          - spec.storageClass
+patches:
+  - target:
+      kind: CommonService
+      name: common-service
+      version: operator.ibm.com/v3
+    patch: |-
+      - op: replace
+        path: /spec/storageClass
+        value: 'ocs-storagecluster-cephfs'

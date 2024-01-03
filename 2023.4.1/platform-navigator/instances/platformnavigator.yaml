@@ -2,7 +2,6 @@ apiVersion: integration.ibm.com/v1beta1
 kind: PlatformNavigator
 metadata:
   name: platform-navigator
-  namespace: default
   annotations:
     argocd.argoproj.io/sync-wave: "5"
 spec:
