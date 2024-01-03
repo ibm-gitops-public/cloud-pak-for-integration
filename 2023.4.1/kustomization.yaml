@@ -12,3 +12,18 @@ patches:
       - op: replace
         path: /spec/storageClass
         value: 'ocs-storagecluster-cephfs'
+
+# saving this to showcase that you can feed a patch into a replacements field
+# this effectively allows you to change a single variable to set a bunch if necessary
+
+#replacements:
+#  - source:
+#      name: common-service
+#      kind: CommonService
+#      fieldPath: spec.storageClass
+#    targets:
+#      - select:
+#          kind: PlatformNavigator
+#          name: platform-navigator
+#        fieldPaths:
+#          - spec.storage
