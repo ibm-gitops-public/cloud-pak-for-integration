@@ -1,8 +1,0 @@
-kind: Project
-apiVersion: project.openshift.io/v1
-metadata:
-  name: ibm-licensing
-  labels:
-    kubernetes.io/metadata.name: ibm-licensing
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"

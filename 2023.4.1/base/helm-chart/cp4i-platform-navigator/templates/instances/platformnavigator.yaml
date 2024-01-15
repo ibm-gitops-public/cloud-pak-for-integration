@@ -1,0 +1,12 @@
+apiVersion: integration.ibm.com/v1beta1
+kind: PlatformNavigator
+metadata:
+  name: platform-navigator
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
+spec:
+  license:
+    accept: true
+    license: L-VTPK-22YZPK
+  replicas: 1
+  version: 2023.4.1
