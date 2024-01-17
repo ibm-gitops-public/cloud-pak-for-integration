@@ -4,6 +4,3 @@ kind: Kustomization
 helmCharts:
   - name: cp4i-platform-navigator
     releaseName: cp4i-platform-navigator
-
-helmGlobals:
-  chartHome: helm-chart
