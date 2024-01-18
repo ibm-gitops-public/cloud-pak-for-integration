@@ -7,3 +7,6 @@ fieldSpecs:
   - path: metadata/name
     apiVersion: integration.ibm.com/v1beta1
     kind: PlatformNavigator
+  - path: metadata/name
+    apiVersion: operator.ibm.com/v3
+    kind: CommonService
