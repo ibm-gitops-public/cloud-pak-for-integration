@@ -1,3 +1,5 @@
 storage:
   fileStorage: 'ocs-storagecluster-cephfs'
   blockStorage: 'ocs-storagecluster-ceph-rbd'
+metadata:
+  namespace: 'cp4i'

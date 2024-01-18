@@ -6,4 +6,4 @@ metadata:
     argocd.argoproj.io/sync-wave: "2"
 spec:
   targetNamespaces:
-    - cp4i
+    - {{ .Values.metadata.namespace }}
