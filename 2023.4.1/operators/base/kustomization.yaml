@@ -1,6 +1,39 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-helmCharts:
-  - name: cp4i-pn-operators
-    releaseName: cp4i-pn-operators
+resources:
+  - namespaces
+  - operatorgroups
+  - subscriptions
+
+patches:
+  - target:
+      kind: Namespace
+      name: base
+    patch: |-
+      - op: replace
+        path: /metadata/name
+        value: cp4
+  - target:
+      kind: Namespace
+      name: base
+    patch: |-
+      - op: replace
+        path: "/metadata/labels/kubernetes.io~1metadata.name"
+        value: cp4
+  - target:
+      kind: OperatorGroup
+      name: operatorgroup
+      namespace: base
+    patch: |-
+      - op: replace
+        path: /spec/targetNamespaces
+        value: cp4
+  - target:
+      kind: OperatorGroup
+      name: operatorgroup
+      namespace: base
+    patch: |-
+      - op: replace
+        path: /metadata/namespace
+        value: cp4

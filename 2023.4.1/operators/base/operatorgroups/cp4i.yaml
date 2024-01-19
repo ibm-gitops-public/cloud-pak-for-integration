@@ -2,9 +2,9 @@ apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
   name: operatorgroup
-  namespace: {{ .Values.metadata.namespace }}
+  namespace: base
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
   targetNamespaces:
-    - {{ .Values.metadata.namespace }}
+    - base

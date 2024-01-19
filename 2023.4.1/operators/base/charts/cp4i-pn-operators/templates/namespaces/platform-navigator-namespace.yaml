@@ -1,8 +1,0 @@
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: {{ .Values.metadata.namespace }}
-  labels:
-    kubernetes.io/metadata.name: {{ .Values.metadata.namespace }}
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
