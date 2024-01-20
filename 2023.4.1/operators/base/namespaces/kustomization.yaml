@@ -5,3 +5,4 @@ resources:
   - cert-manager-namespace.yaml
   - ibm-licensing-namespace.yaml
   - platform-navigator-namespace.yaml
+  - ibm-common-services.yaml

@@ -1,0 +1,8 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: ibm-common-services
+  labels:
+    kubernetes.io/metadata.name: ibm-common-services
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"

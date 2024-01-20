@@ -5,3 +5,4 @@ resources:
   - certmanager.yaml
   - cp4i.yaml
   - licensing.yaml
+  - commonservices.yaml
