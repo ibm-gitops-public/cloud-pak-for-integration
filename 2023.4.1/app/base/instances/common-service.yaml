@@ -5,6 +5,7 @@ metadata:
     version: '-1'
     argocd.argoproj.io/sync-wave: "5"
   name: common-service
+  namespace: ibm-common-services
   labels:
     argocd.argoproj.io/managed-by: argocd
     managed-by: kustomize-argocd
@@ -12,3 +13,4 @@ spec:
   license:
     accept: true
   size: medium
+  operatorNamespace: openshift-operators
