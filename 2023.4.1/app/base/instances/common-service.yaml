@@ -8,10 +8,11 @@ metadata:
   namespace: openshift-operators
   labels:
     argocd.argoproj.io/managed-by: argocd
+    managed-by: kustomize-argocd
 spec:
   license:
     accept: true
   operatorNamespace: openshift-operators
   servicesNamespace: ibm-common-services
   size: medium
-  storageClass: {{ .Values.storage.fileStorage }}
+  storageClass: default

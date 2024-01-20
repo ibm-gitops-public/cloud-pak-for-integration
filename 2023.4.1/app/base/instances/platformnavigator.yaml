@@ -2,9 +2,11 @@ apiVersion: integration.ibm.com/v1beta1
 kind: PlatformNavigator
 metadata:
   name: platform-navigator
-  namespace: {{ .Values.metadata.namespace }}
+  namespace: base
   annotations:
     argocd.argoproj.io/sync-wave: "5"
+  labels:
+    managed-by: kustomize-argocd
 spec:
   license:
     accept: true
