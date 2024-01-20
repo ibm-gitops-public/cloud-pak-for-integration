@@ -7,5 +7,4 @@ metadata:
   labels:
     managed-by: kustomize-argocd
 spec:
-  targetNamespaces:
-    -
+  targetNamespaces: []
