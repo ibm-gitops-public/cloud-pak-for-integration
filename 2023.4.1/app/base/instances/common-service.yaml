@@ -14,3 +14,4 @@ spec:
     accept: true
   size: medium
   operatorNamespace: openshift-operators
+  servicesNamespace: ibm-common-services
