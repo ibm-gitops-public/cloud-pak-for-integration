@@ -4,5 +4,6 @@ metadata:
   name: ibm-common-services
   labels:
     kubernetes.io/metadata.name: ibm-common-services
+    argocd.argoproj.io/managed-by: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "1"

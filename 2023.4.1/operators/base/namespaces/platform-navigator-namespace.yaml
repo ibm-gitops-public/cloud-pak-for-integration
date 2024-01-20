@@ -4,5 +4,6 @@ metadata:
   name: base
   labels:
     kubernetes.io/metadata.name: base
+    argocd.argoproj.io/managed-by: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "1"
